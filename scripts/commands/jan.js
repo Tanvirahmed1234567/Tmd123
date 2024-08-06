@@ -29,7 +29,7 @@ event.body.indexOf("Jan") === 0 ||event.body.indexOf("Xan") === 0)) return;
     let tid = threadID,
         mid = messageID;
     const content = encodeURIComponent(args.join(" "));
-    if (!args[0]) return api.sendMessage("𝐔𝐅𝐅 𝐗𝐀𝐍'𝐒 𝐁𝐎𝐋𝐎__😽💋🩷""𝙃𝙚𝙖 𝙅𝙖𝙣 𝙆𝙞 𝙝ø𝙞𝙨𝙚 _//-😘😘""নাটক কম করো পিও_//-🫵😼", tid, mid);
+    if (!args[0]) return api.sendMessage("𝐔𝐅𝐅 𝐗𝐀𝐍'𝐒 𝐁𝐎𝐋𝐎__😽💋🩷", tid, mid);
     try {
         console.log("Request:", `https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`); // Log request URL
         const res = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`);
